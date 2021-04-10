@@ -13,13 +13,8 @@ private:
 		{ 'A','J','D','K','S','I','R','U','X','B','L','H','W','T','M','C','Q','G','Z','N','P','Y','F','V','O','E' },
 		{ 'B','D','F','H','J','L','C','P','R','T','X','V','Z','N','Y','E','I','W','G','A','K','M','U','S','Q','O' }
 	};
-	
-	int slowRotorPosition;
-	int mediumRotorPosition;
-	int fastRotorPosition;
 
-	int rotorPositions[3] = { 0,0,0 };
-
+	int rotorPositions[3];
 
 	void CycleRotors();
 

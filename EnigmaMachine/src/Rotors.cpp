@@ -2,14 +2,14 @@
 
 Rotors::Rotors(int slowRotorPosition, int mediumRotorPosition, int fastRotorPosition)
 {
-	this->slowRotorPosition = slowRotorPosition;
-	this->mediumRotorPosition = mediumRotorPosition;
-	this->fastRotorPosition = fastRotorPosition;
+	this->rotorPositions[0] = fastRotorPosition - 1;
+	this->rotorPositions[1] = mediumRotorPosition - 1;
+	this->rotorPositions[2] = slowRotorPosition - 1;
 }
 
-void Rotors::CycleRotors()
+ void Rotors::CycleRotors()
 {
-	this->fastRotorPosition += 1;
+	/*this->fastRotorPosition += 1;
 
 	if (this->fastRotorPosition > 26)
 	{
@@ -26,8 +26,9 @@ void Rotors::CycleRotors()
 	if (this->slowRotorPosition > 26)
 	{
 		this->slowRotorPosition = 1;
-	}
-}
+	} */
+
+} 
 
 int Rotors::TraverseRotors(int rotorIndex, int &charIndex, int rotorPosition)
 {
